@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "genshinui",
+  "version": "0.0.2-alpha4",
+  "name": "Genshin UI",
+  "description": "A minecraft mod brings Genshin Impact's UI experience to minecraft",
+  "authors": [
+    "jack253-png"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Jack253-png/BetterUI",
+    "issues": "https://github.com/Jack253-png/BetterUI/issues"
+  },
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.mcreater.genshinui.GenshinUIClient"
+    ],
+    "server": [],
+    "main": [
+      "com.mcreater.genshinui.GenshinUI"
+    ],
+    "modmenu": [
+      "com.mcreater.genshinui.config.ModMenuApiImpl"
+    ]
+  },
+  "mixins": [
+    "genshinui.mixin.json"
+  ],
+  "license": "MIT",
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "minecraft": "1.18.x"
+  },
+  "breaks": {
+    "blur": "*",
+    "blur-fabric": "*"
+  },
+  "jars": [
+    {"file": "META-INF/jars/cloth-config-fabric.jar"},
+    {"file": "META-INF/jars/satin.jar"},
+    {"file": "META-INF/jars/caxton.jar"},
+    {"file": "META-INF/jars/geckolib.jar"}
+  ]
+}

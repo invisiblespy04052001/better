@@ -1,0 +1,29 @@
+{
+  "required": true,
+  "package": "com.mcreater.genshinui.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "client.ClientPlayerEntityMixin",
+    "client.ClientWorldMixin",
+    "client.ClientWorldMixin$ClientWorldPropertiesMixin",
+    "client.MinecraftClientMixin",
+    "client.controls.hud.ChatHudMixin",
+    "client.controls.hud.InGameHudMixin",
+    "client.controls.hud.SubtitlesHudMixin",
+    "client.controls.screen.ChatScreenMixin",
+    "client.controls.screen.DownloadingTerrainScreenMixin",
+    "client.controls.screen.GameMenuScreenMixin",
+    "client.controls.screen.LevelLoadingScreenMixin",
+    "client.controls.screen.ProgressScreenMixin",
+    "client.controls.screen.SaveLevelScreenMixin",
+    "client.controls.screen.ScreenMixin",
+    "client.controls.screen.TitleScreenMixin",
+    "client.controls.widget.ClickableWidgetMixin",
+    "client.controls.widget.PressableWidgetMixin",
+    "client.controls.widget.SliderWidgetMixin",
+    "invokers.PressableWidgetInvoker"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
